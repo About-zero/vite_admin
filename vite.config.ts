@@ -19,5 +19,10 @@ export default defineConfig({
     open: true,
     // 热更新
     hmr: true,
+    proxy: {
+      "/api": {
+        changeOrigin: true,
+      },
+    },
   },
 });
